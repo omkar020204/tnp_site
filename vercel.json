@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "TNP_SITE-MAIN/wsgi.py",
+        "src": "TPO_website/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "TNP_SITE-MAIN/wsgi.py"
+            "dest": "TPO_website/wsgi.py"
         }
     ]
 }
